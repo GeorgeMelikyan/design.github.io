@@ -6,5 +6,10 @@
 
 ![Диаграмма](https://github.com/GeorgeMelikyan/design.github.io/blob/master/resources/01_A.png?raw=true)
 
-**Новое предложение:** Планировщик заполняет коробку при 5 готовых заказах этими заказами с помощью CRM. 
+**Новое предложение:** Планировщик заполняет коробку при 5 готовых заказах этими заказами с помощью CRM.
 
+### Class Diagram
+![none](https://github.com/GeorgeMelikyan/design.github.io/blob/master/resources/classDiagram.png?raw=true)
+
+### Use Diagram
+![none](https://github.com/GeorgeMelikyan/design.github.io/blob/master/resources/lab1/useDiagram.png?raw=true)
