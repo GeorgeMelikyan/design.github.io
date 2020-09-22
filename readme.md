@@ -4,7 +4,7 @@
 
 **Предложение:** заполнить коробку.
 
-![Диаграмма](https://github.com/GeorgeMelikyan/design.github.io/blob/master/resources/01_A0.png?raw=true)
+![Диаграмма](https://github.com/GeorgeMelikyan/design.github.io/blob/master/resources/01_A.png?raw=true)
 
 **Новое предложение:** Планировщик заполняет коробку при 5 готовых заказах этими заказами с помощью CRM. 
 
