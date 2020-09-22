@@ -3,5 +3,6 @@
 ## Лабораторная Работа #1
 
 *Предложение:* заполнить коробку.
+
 ![Диаграмма](https://github.com/GeorgeMelikyan/design.github.io/blob/master/resources/01_A0.png?raw=true)
 
