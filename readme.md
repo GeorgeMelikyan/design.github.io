@@ -6,6 +6,6 @@
 
 ### Домашнее задание по [семинарам 3-4](https://github.com/GeorgeMelikyan/design.github.io/wiki/Деловая-игра) 
 
-### [Отчет по лабораторным]() работам 4-6
+### [Отчет по лабораторным](https://github.com/GeorgeMelikyan/design.github.io/wiki/Лабораторные-работы-№4,-5,-6) работам 4-6
 
 ### Рефераты: [разработанный](https://github.com/stankin/design-part-1/wiki/exam14-3) и [проверенный](https://github.com/stankin/design-part-1/wiki/exam14-5)
