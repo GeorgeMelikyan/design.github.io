@@ -1,4 +1,4 @@
-# [ИДБ-18-06](https://github.com/stankin/design-part-1/wiki/list-idb-18-06) Меликян Георгий 
+# [ИДБ-17-05](https://github.com/stankin/design-part-1/wiki/list-idb-17-05) Меликян Георгий 
 
 ### Домашнее задания по [семинару 1](https://github.com/stankin/design-part-1/wiki/sem1#%D0%98%D0%94%D0%91-17-05) и [семинару 2](https://github.com/stankin/design-part-1/wiki/sem2#%D0%98%D0%94%D0%91-17-05)
 
