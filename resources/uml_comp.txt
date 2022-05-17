@@ -1,0 +1,26 @@
+@startuml
+skinparam component {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+skinparam interface {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+
+component [БД] as DB
+component [Клиент] as CLIENT
+component [Система] as SYS
+
+() "SQL" as L1
+() "Интернет" as L2
+
+CLIENT - L2
+L2 - SYS
+SYS - L1
+L1 - DB
+
+@enduml
