@@ -1,0 +1,39 @@
+@startuml
+
+skinparam class {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+class In as "Входящий"
+class Out as "Выходящий"
+class manage as "Управляющий"
+class vnutr as "Внутренний"
+class res as "Расчёт скорости доставки и обслуживания"
+class doc as "Отчёт"
+class address as "Адрес доставки"
+class address_service as "Адрес сервиса"
+class client as "Клиент"
+class order as "Новая заявка"
+class rule as "Скипты и стандарты"
+
+Уведомление_пользователю <|-- In
+Уведомление_пользователю <|-- Out
+Уведомление_пользователю <|-- manage
+
+In <|-- CRM
+
+CRM <|-- order
+CRM <|-- client
+CRM <|-- address
+CRM <|-- address_service
+
+manage <|-- vnutr
+Out <|-- doc
+doc <|-- res
+vnutr <|-- rule
+
+hide members
+hide circle
+hide methods
+@enduml
