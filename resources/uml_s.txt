@@ -1,0 +1,32 @@
+@startuml
+skinparam monochrome true
+
+actor "Пользователь" as user
+participant "Система" as sys
+database "База данных" as db
+
+activate user
+activate sys
+
+user -> sys: Добавление новой заявки
+sys -> user: Получение формы "ФИО, Адрес, Неисправность"
+user -> sys: Отправвка формы "ФИО, Адрес, Неисправность"
+
+activate db
+sys -> db: Расчёт кратчайшего пути до клиента
+sys -> db: Расчёт кратчайшего пути от клиента до сервиса
+sys -> db: Назначение курьера
+
+
+db -> sys: Запрос о назначении курьера и расчётное время доставки
+deactivate db
+
+sys -> user: Уведомление "Назначение на заказ и время доставки"
+user -> sys: Подтвержение назначения
+
+sys-> db: Сохранение данных
+activate db
+db-> sys: 
+deactivate db
+
+@enduml
