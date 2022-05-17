@@ -1,0 +1,28 @@
+@startuml
+skinparam monochrome true
+hide circle
+hide methods
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Инженер"
+actor "Курьер"
+actor "Руководитель"
+
+rectangle Система {
+usecase case1 as "Получить информацию о заказе"
+usecase case2 as "Получить информацию об адресах доставки"
+usecase case3 as "Получить информацию о назначении исполнителей"
+usecase case4 as "Рассчитать скорость обслуживания"
+
+Инженер --> case1
+Инженер --> case3
+Курьер --> case3
+Курьер --> case2
+case3 --> case4
+case2 --> case4
+case1 --> case4
+case4 --> Руководитель
+}
+
+@enduml
