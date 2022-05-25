@@ -1,28 +1,33 @@
 @startuml
 skinparam monochrome true
 
-actor "Пользователь" as user
+actor "Инженер" as engineer
+actor "Курьер" as courier
 participant "Система" as sys
 database "База данных" as db
 
-activate user
+activate engineer
 activate sys
 
-user -> sys: Добавление новой заявки
-sys -> user: Получение формы "ФИО, Адрес, Неисправность"
-user -> sys: Отправвка формы "ФИО, Адрес, Неисправность"
+engineer -> sys: Добавление новой заявки
+sys -> engineer: Получение формы "ФИО, Адрес, Неисправность"
+engineer -> sys: Отправвка формы "ФИО, Адрес, Неисправность"
 
 activate db
 sys -> db: Расчёт кратчайшего пути до клиента
 sys -> db: Расчёт кратчайшего пути от клиента до сервиса
 sys -> db: Назначение курьера
 
-
-db -> sys: Запрос о назначении курьера и расчётное время доставки
+db -> sys: Запрос о назначении сервиса (инженера) на заказ
+sys -> engineer: Уведомление с предложением выполнить заказ
+engineer -> sys : Ответ на предложение выполнить заказ
 deactivate db
 
-sys -> user: Уведомление "Назначение на заказ и время доставки"
-user -> sys: Подтвержение назначения
+activate courier
+sys -> courier: Уведомление с предложением доставить заказ
+courier -> sys : Ответ на предложение доставить заказ
+deactivate courier
+
 
 sys-> db: Сохранение данных
 activate db
